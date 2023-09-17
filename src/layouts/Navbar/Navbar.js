@@ -31,7 +31,7 @@ function Navbar() {
           onClick={handleHomeClick}
         />
       </div>
-      <nav className={`nav- ${menuOpen ? "open" : ""}`}>
+      <nav className={`nav ${menuOpen ? "open" : ""}`}>
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           {menu.map((item) => (
             <li key={item.label}>
@@ -42,7 +42,7 @@ function Navbar() {
           ))}
         </ul>
       </nav>
-      <div className="menu-toggle" onClick={toggleMenu}>
+      <div className="hamburger" onClick={toggleMenu}>
         <img src={MenuIcon} alt="nav toggle" />
       </div>
     </header>

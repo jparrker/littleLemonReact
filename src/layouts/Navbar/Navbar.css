@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  max-width: 65rem;
+  max-width: 90vw;
   margin: 0 auto;
 }
 
@@ -30,7 +30,6 @@ ul li a {
   margin-left: 1rem;
   text-decoration: none;
   color: #000;
-  font-family: Karla;
   font-size: 1.1rem;
 }
 
@@ -44,20 +43,16 @@ ul li a:hover {
 @media screen and (max-width: 767px) {
   .navbar {
     display: flex;
-    justify-content: space-evenly;
     background-color: white;
     padding: 1rem 1rem;
     align-items: center;
     height: 4rem;
     width: 100%;
     margin: 0 auto;
-    position: fixed;
-    margin-bottom: 96px;
   }
   .hamburger {
     display: block;
   }
-
   .nav-links {
     position: fixed;
     top: 4rem;
@@ -84,7 +79,7 @@ ul li a:hover {
     display: block;
     padding-bottom: 20px;
     text-decoration: none;
-    font-family: Karla;
+
     font-size: 1.1em;
     text-align: center;
     max-width: 85%;

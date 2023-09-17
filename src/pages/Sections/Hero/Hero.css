@@ -39,3 +39,49 @@ p {
   object-fit: cover;
   border-radius: 16px;
 }
+@media screen and (max-width: 767px) {
+  .hero-background {
+    background: #495e57;
+    height: 100%;
+    display: flex;
+  }
+
+  .hero {
+    height: 100%;
+    padding: 2rem 1rem;
+    display: grid;
+    align-items: center;
+    grid-column-gap: 2rem;
+    grid-template: "info " "image";
+    grid-template-columns: 1fr;
+    max-width: 65rem;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    color: #f4ce14;
+    font-size: 32px;
+    line-height: 0.5rem;
+  }
+
+  .hero-subtitle {
+    color: white;
+    font-size: 2rem;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  .hero-image {
+    grid-area: image;
+    width: 98%;
+    height: auto;
+    justify-self: center;
+    margin-top: 25px;
+  }
+
+  .hero-info {
+    grid-area: info;
+  }
+}

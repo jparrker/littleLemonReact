@@ -11,7 +11,7 @@
   grid-column-gap: 2rem;
   grid-template: "hero-text image";
   grid-template-columns: 60fr 40fr;
-  max-width: 65rem;
+  max-width: 80vw;
   margin: 0 auto;
 }
 .hero-title {
@@ -27,6 +27,7 @@
 p {
   color: #fff;
   line-height: 1.8;
+  width: 70%;
 }
 .hero-info {
   grid-area: hero-text;
@@ -54,7 +55,7 @@ p {
     grid-column-gap: 2rem;
     grid-template: "info " "image";
     grid-template-columns: 1fr;
-    max-width: 65rem;
+    max-width: 83vw;
     margin: 0 auto;
   }
 

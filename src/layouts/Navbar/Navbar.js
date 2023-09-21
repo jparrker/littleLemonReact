@@ -17,7 +17,7 @@ function Navbar() {
     { label: "Home", link: "/" },
     { label: "About", link: "/about" },
     { label: "Menu", link: "/menu" },
-    { label: "Reservations", link: "/reservations" },
+    { label: "Reservations", link: "/reservation" },
     { label: "Order Online", link: "/orders" },
     { label: "Login", link: "/login" },
   ];

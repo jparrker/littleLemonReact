@@ -13,7 +13,7 @@ const Card = ({ image, title, price, description, order }) => {
           <h3>{title}</h3>
           <h3 className="price">{price}</h3>
         </div>
-        <p>{description}</p>
+        <p id="card-description">{description}</p>
 
         <Link to="#">
           <div className="card-order-btn">

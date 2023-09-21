@@ -1,14 +1,9 @@
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Hero.css";
 import pages from "../../../utils/pages";
 import Image from "../../../assets/restaurantchef.jpg";
-import Button from "../../../components/Button/Button";
 
 function Hero() {
-  const navigate = useNavigate();
-  const onClickReservation = () => {
-    navigate(pages.get("reservations").path);
-  };
   return (
     <div className="hero-background">
       <div className="hero">
@@ -21,10 +16,9 @@ function Hero() {
             From greek classics to modern mediterranean dishes, whether you are
             dining in or you need catering, Little Lemon has you covered.
           </p>
-          <Button title={"Reserve a table"}>
-            {" "}
-            onClick={onClickReservation}{" "}
-          </Button>
+          <NavLink to="/reservation">
+            <button className="reserve-btn">Reserve a Table</button>
+          </NavLink>
         </div>
         <img
           className="hero-image"

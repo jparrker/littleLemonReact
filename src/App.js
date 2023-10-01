@@ -11,16 +11,18 @@ import Reservations from "./pages/Reservations/Reservations";
 
 function App() {
   return (
-    <Layout>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/orders" element={<Orders />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/reservation" element={<Reservations />} />
-      </Routes>
-    </Layout>
+    <div data-testid="app-component">
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/reservation" element={<Reservations />} />
+        </Routes>
+      </Layout>
+    </div>
   );
 }
 

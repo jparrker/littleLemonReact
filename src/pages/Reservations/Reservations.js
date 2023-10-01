@@ -57,7 +57,7 @@ const Reservations = () => {
             navigate(pages.get("home").path);
           }}
           title="Reservation Successful!"
-          description="Thank you for choosing Little Lemon! Your reservation has been successfully made. You will receive a confirmation email with the details of your reservation. Thank you for choosing Little Lemon!"
+          description="Thank you for choosing Little Lemon! Your reservation details have been sent to your email. We'll see you soon!"
         />
       )}
     </div>

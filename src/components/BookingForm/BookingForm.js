@@ -11,6 +11,7 @@ const BookingForm = ({
   const defaultTime = availableTimes[0];
 
   const [formValues, setFormValues] = useState({
+    email: "",
     date: "",
     time: defaultTime,
     people: "",
@@ -29,6 +30,18 @@ const BookingForm = ({
 
   return (
     <form onSubmit={(e) => onFormSubmit(e, formValues)}>
+      <div className="reservation-container">
+        <label htmlFor="email" className="containter-item-title">
+          email
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          onChange={handleInputChange}
+          className={isFormSubmitted && !formValues.email ? "error" : ""}
+        />
+      </div>
       <div className="reservation-container">
         <label htmlFor="date" className="containter-item-title">
           Date
@@ -59,7 +72,7 @@ const BookingForm = ({
       </div>
       <div className="reservation-container">
         <label htmlFor="people" className="containter-item-title">
-          Number of people
+          Guests
         </label>
         <input
           type="number"
